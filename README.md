@@ -1,18 +1,14 @@
-#Quantum Recurrent Neural Network (QRNN) Implementation
-This repository provides a basic implementation of a Quantum Recurrent Neural Network (QRNN) using Torch and PennyLane for quantum computing. The model is designed for processing time-series data, particularly in applications such as stock market prediction, where complex temporal dependencies exist.
+# Quantum Recurrent Neural Network (QRNN) Implementation
 
-Prerequisites
+This repository provides a basic implementation of a Quantum Recurrent Neural Network (QRNN) using `Torch` and `PennyLane` for quantum computing. The model is designed for processing time-series data, particularly in applications such as stock market prediction, where complex temporal dependencies exist.
+
+## Prerequisites
+
 Before running the code, ensure that you have the necessary Python libraries installed:
-pip install torch pennylane scikit-learn matplotlib seaborn
-The code requires the following packages:
 
-torch: for building and training the QRNN model.
-pennylane: for constructing and simulating quantum circuits.
-scikit-learn: for preprocessing the data (e.g., scaling and imputing missing values).
-matplotlib: for plotting loss curves, weight distributions, and QRNN outputs.
-seaborn: for visualizing activation heatmaps.
-QRNN Overview
-QRNN is a hybrid neural network combining classical and quantum computing elements. It is designed to process sequential data and capture dependencies over time by leveraging quantum circuits for feature extraction.
+```bash
+pip install torch pennylane scikit-learn matplotlib seaborn
+
 
 Components
 Quantum Circuit Layer (VQC): A quantum variational layer embedded within the neural network, responsible for transforming classical input into quantum states and performing quantum operations.
